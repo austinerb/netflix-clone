@@ -18,23 +18,25 @@
         <a href="#">Try 30 Days Free ></a>
       </div>
     </div>
-    <div class="choice">
+    <div class="choice-container" id="choice">
       <ul>
-        <li><a class="selected" href="#">No commitments<br>
+        <li><a class="selected choice-selector" href="#choice">No commitments<br>
           Cancel online at anytime</a></li>
-        <li><a href="#">Watch anywhere</a></li>
-        <li><a href="#">Pick your price</a></li>
+        <li><a class="choice-selector" href="#choice">Watch anywhere</a></li>
+        <li><a class="choice-selector" href="#choice">Pick your price</a></li>
       </ul>
     </div>
     <div class="container">
-      <div class="choice1">
+      <div class="choice choice1 choice-selected">
+        <div class="choice1-container">
         <div>
-          <h3>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</h3>
-          <a href="#">Try 30 Days Free</a>
+            <h3>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</h3>
+            <a href="#">Try 30 Days Free</a>
+          </div>
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_cancelanytime_withdevice.png" alt="cancel">
         </div>
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/home/thisIsNetflix/modules/asset_cancelanytime_withdevice.png" alt="cancel">
       </div>
-      <div class="choice2">
+      <div class="choice choice2">
         <div class="row1">
           <p>Watch TV shows and movies anytime, anywhere - personalized for you.</p>
           <a href="#">Try 30 Days Free</a>
@@ -57,12 +59,103 @@
           </div>
         </div>
       </div>
-      <div class="choice3">
-
+      <div class="choice choice3">
+        <h3>Choose one plan and watch everything on Netflix.</h3>
+        <a href="#">Try 30 Days Free</a>
+        <table cellspacing="0" cellpadding="0">
+          <tr>
+            <th></th>
+            <th>BASIC</th>
+            <th>STANDARD</th>
+            <th>PREMIUM</th>
+          </tr>
+          <tr>
+            <td>Monthly price after free month ends on 8/1/19</td>
+            <td>$8.99</td>
+            <td>$12.99</td>
+            <td>$15.99</td>
+          </tr>
+          <tr>
+            <td>HD available</td>
+            <td>x</td>
+            <td>check</td>
+            <td>check</td>
+          </tr>
+          <tr>
+            <td>Ultra HD available</td>
+            <td>x</td>
+            <td>x</td>
+            <td>check</td>
+          </tr>
+          <tr>
+            <td>Screens you can watch on at the same time</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Watch on your laptop, TV, phone and tablet</td>
+            <td>check</td>
+            <td>check</td>
+            <td>check</td>
+          </tr>
+          <tr>
+            <td>Unlimited movies and TV shows</td>
+            <td>check</td>
+            <td>check</td>
+            <td>check</td>
+          </tr>
+          <tr>
+            <td>Cancel anytime</td>
+            <td>check</td>
+            <td>check</td>
+            <td>check</td>
+          </tr>
+          <tr>
+            <td>First month free</td>
+            <td>check</td>
+            <td>check</td>
+            <td>check</td>
+          </tr>
+        </table>
       </div>
     </div>
 
     <footer>
+      <div class="container">
+        <h3>Questions? Call 1-866-579-7172</h3>
+        <div class="links">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Ways to Watch</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Netflix Originals</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Redeem Gift Cards</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Speed Test</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Buy Gift Cards</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Legal Notices</a></li>
+          </ul>
+        </div>
+        <select name="language">
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+        </select>
+      </div>
     </footer>
 
     <script src="script.js" charset="utf-8"></script>

@@ -81,7 +81,7 @@ nav #signin {
 
 /* choice selector */
 
-.choice ul {
+.choice-container ul {
   list-style: none;
   display: flex;
   width: 100%;
@@ -92,20 +92,21 @@ nav #signin {
   border-bottom: 2px solid rgb(62, 62, 62);
 }
 
-.choice ul li a {
+.choice-container ul li a {
   display: inline-block;
   text-decoration: none;
   color: rgb(62, 62, 62);
   padding: 50px;
+  height: 130px;
   font-size: 17px;
   font-weight: bold;
 }
 
-.choice ul li a:hover {
+.choice-container ul li a:hover {
   color: white;
 }
 
-.choice ul li a.selected {
+.choice-container ul li a.selected {
   border-bottom: 5px solid rgb(217, 25, 33);
   color: white;
 }
@@ -114,30 +115,31 @@ nav #signin {
 .choice2,
 .choice3 {
   background-color: black;
-}
-
-.choice2,
-.choice3 {
-  /* display: none; */
+  display: none;
 }
 
 .container {
   background-color: black;
 }
 
+.choice-selected {
+  display: block;
+}
+
 /* choice 1 */
 
 .choice1 {
-  display: flex;
   margin: 0 auto;
   width: 80%;
-  padding: 30px 30px 400px;
+  padding: 0 30px 400px;
+}
 
-  display: none;
+.choice1-container {
+  display: flex;
 }
 
 .choice1 div {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .choice1 div h3 {
@@ -167,9 +169,7 @@ nav #signin {
 .choice2 {
   margin: 0 auto;
   width: 80%;
-  padding: 30px 30px 300px;
-
-  display: none;
+  padding: 50px 30px 300px;
 }
 
 .choice2 .row1 {
@@ -213,4 +213,95 @@ nav #signin {
 
 .choice2 .row2 .row-item p {
   color: rgb(94, 94, 94);
+}
+
+/* choice 3 */
+
+.choice3 {
+  padding: 50px 30px 200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.choice3 h3 {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.choice3 a {
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(217, 25, 33);
+  padding: 15px;
+  border-radius: 3px;
+  text-align: center;
+  width: 180px;
+  margin: 0 auto 40px;
+}
+
+.choice3 table {
+  width: 100%;
+}
+
+.choice3 table th {
+  color: white;
+}
+
+.choice3 table {
+  color: rgb(191, 191, 191);
+}
+
+.choice3 table th,
+.choice3 table td {
+  padding: 10px;
+}
+
+.choice3 table tr:nth-last-of-type(2n) {
+  background-color: rgb(50, 50, 50);
+}
+
+/* footer */
+
+footer .container {
+  padding: 20px 50px;
+}
+
+footer h3 {
+  color: rgb(171, 171, 171);
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+footer .links {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+footer .links ul {
+  list-style: none;
+  width: 25%;
+}
+
+footer .links ul li {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+footer .links ul li a {
+  text-decoration: none;
+  color: rgb(171, 171, 171);
+}
+
+footer select {
+  background-color: black;
+  color: rgb(171, 171, 171);
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(78, 78, 78);
 }
