@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.landing {
+  height: 95vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://hcdevilsadvocate.com/wp-content/uploads/2019/01/netflix-background-9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/* nav */
+
+nav {
+  width: 100%;
+  padding-top: 20px;
+}
+
+nav #netflix {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 49px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png');
+  background-size: contain;
+}
+
+nav #signin {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: rgb(217, 25, 33);
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 3px;
+}
+
+/* landing msg */
+
+.landing .landing-msg {
+  width: 100%;
+  text-align: center;
+  margin-top: 20vh;
+  color: white;
+}
+
+.landing-msg h1 {
+  font-size: 80px;
+  text-shadow: 0 0 5px black;
+  margin-bottom: 30px;
+}
+
+.landing-msg p {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.landing-msg a {
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(217, 25, 33);
+  padding: 28px 50px;
+  border-radius: 3px;
+}
+
+/* choice selector */
+
+.choice ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(13, 13, 13);
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(62, 62, 62);
+}
+
+.choice ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(62, 62, 62);
+  padding: 50px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.choice ul li a:hover {
+  color: white;
+}
+
+.choice ul li a.selected {
+  border-bottom: 5px solid rgb(217, 25, 33);
+  color: white;
+}
+
+.choice1,
+.choice2,
+.choice3 {
+  background-color: black;
+}
+
+.choice2,
+.choice3 {
+  /* display: none; */
+}
+
+.container {
+  background-color: black;
+}
+
+/* choice 1 */
+
+.choice1 {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  padding: 30px 30px 400px;
+
+  display: none;
+}
+
+.choice1 div {
+  padding-top: 80px;
+}
+
+.choice1 div h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.choice1 div a {
+  display: inline-block;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(217, 25, 33);
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.choice1 img {
+  width: 50%;
+}
+
+/* choice 2 */
+
+.choice2 {
+  margin: 0 auto;
+  width: 80%;
+  padding: 30px 30px 300px;
+
+  display: none;
+}
+
+.choice2 .row1 {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.choice2 .row1 p {
+  color: white;
+  font-size: 18px;
+}
+
+.choice2 .row1 a {
+  display: inline-block;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(217, 25, 33);
+  padding: 15px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.choice2 .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.choice2 .row2 .row-item img {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+.choice2 .row2 .row-item h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.choice2 .row2 .row-item p {
+  color: rgb(94, 94, 94);
+}
